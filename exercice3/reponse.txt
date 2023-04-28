@@ -1,0 +1,13 @@
+1) wget/curl  http://www.3zsoftware.com/listes/liste_francais.zip
+2) unzip liste_francais.zip
+3) -E = Extended regex - utilisation du regex étendu
+   -o = only matching - ne montre que les résultats qui matchent le regex et ne sont pas vides
+4) grep -Eo <expression> liste_francais.txt 
+5) grep -Eo '\b[bB][[:alpha:]]*e\b' liste_francais.txt 
+286 mots
+6) grep -Eo '\bba[bcdfghjklmnpqrstvwxyz][aeiouy][[:alpha:]]*e\b' liste_francais.txt 
+31 mots
+7) grep -Eo '\bp[[:alpha:]]{4}\b' liste_francais.txt 
+184 mots
+8) grep -Eo '\b[bcdfghjklmnpqrstvwxyz]([aeiouy][bcdfghjklmnpqrstvwxyz])*[aeiouy]\b' liste_francais.txt 
+486 mots
