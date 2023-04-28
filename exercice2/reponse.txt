@@ -1,0 +1,12 @@
+1) Pour effectuer cette tâche, un simple script bash executant la commande cp est suffisant.
+
+2) Comment faire en sorte de lancer ce script :
+On  peut planifier l'execution grace à crontab.
+- Les 4eme, 7eme et 23eme jours du mois à 16 heures :
+0 16 4,7,23 * *
+- Une fois tous les deux jours à 9 heures :
+0 9 */2 * * 
+- Tous les lundis à 13 heures :
+0 13 * * 1
+- Au démarrage de la machine:
+@reboot

@@ -1,0 +1,4 @@
+Bash est pratique pour les scripts de manipulation de fichiers et de gestion des processus, mais n'est pas très puissant pour les scripts qui nécessitent une logique complexe. 
+Il a l'avantage d'être généralement installé nativement dans les environements linux.
+Python est très puissant pour les scripts nécessitant une logique complexe ou la manipulation de données, mais nécessite l'installation de logiciels/modules supplémentaires.
+L'utilisation de Bash et de Python est souvent complémentaire, avec Bash utilisé pour les tâches simples et Python pour les tâches plus complexes ou de manipulation de données.
