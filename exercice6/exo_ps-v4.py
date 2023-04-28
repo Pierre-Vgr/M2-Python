@@ -17,11 +17,11 @@ while True:
         else :
             logging.info(f"Aucun processus interdit n'a été trouvé")
 
-    if disk_usage.percent > 90:
-        logging.error("Disk space is running low!")
-    elif disk_usage.percent > 70:
-        logging.warning("Disk space is getting low.")
+    if disk_usage.percent > 70 :
+        logging.warning("L'espace maximal est presque atteint")
+    elif disk_usage.percent > 80:
+        logging.critical("L'espace maximal est atteint.")
     else:
-        logging.info("Disk space is OK.")
+        logging.info("Espace disque OK.")
     
     time.sleep(5)
